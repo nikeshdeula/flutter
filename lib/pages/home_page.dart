@@ -1,3 +1,4 @@
+import 'package:app_1/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,7 +12,8 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Focus"),
+          backgroundColor: Colors.pink,
+          title: const Text("Anime"),
         ),
         body: const Center(
             child: Text(
@@ -23,7 +25,7 @@ class HomePage extends StatelessWidget {
             fontStyle: FontStyle.italic,
           ),
         )),
-        drawer: const Drawer(child: Text("serve")),
+        drawer: MyDrawer(),
       ),
     );
   }

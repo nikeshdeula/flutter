@@ -1,6 +1,7 @@
 import 'package:app_1/pages/home_page.dart';
 import 'package:app_1/pages/login_page.dart';
 import 'package:app_1/utils/routes.dart';
+import 'package:app_1/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,13 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LoginPage(),
-      // initialRoute: "/",
-      // routes: {
-      //   "/": (context) => LoginPage(),
-      //   MyRoutes.homeRoute: (context) => HomePage(),
-      //   MyRoutes.loginRoute: (context) => LoginPage()
-      // },
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
