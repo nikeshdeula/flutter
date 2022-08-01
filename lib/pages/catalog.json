@@ -1,0 +1,13 @@
+{
+    "products" : [
+        {
+            "id": "anime01",
+            "name": "iphone 12 pro",
+            "desc": "It's an apple",
+            "price":900,
+            "color": "#33505a",
+            "image": "https://vader-prod.s3.amazonaws.com/1647011748-iphone-13-pro-family-hero.png"
+            
+        }
+    ]
+}
