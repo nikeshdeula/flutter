@@ -50,7 +50,7 @@ class MyDrawer extends StatelessWidget {
                 color: Colors.black,
               ),
               title: Text(
-                "Bookmarks",
+                "privacy",
                 textScaleFactor: 1.2,
                 style: TextStyle(color: Color.fromARGB(255, 234, 3, 3)),
               ),
