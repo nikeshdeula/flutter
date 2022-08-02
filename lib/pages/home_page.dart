@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dummylist = List.generate(50, (index) => CatalogModel.items[0]);
     const int age = 21;
     const String name = "nikesh";
     return MaterialApp(
@@ -18,12 +19,17 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.pink,
           title: const Text("Anime"),
         ),
-        body: ListView.builder(
-            itemCount: CatalogModel.items.length,
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: ListView.builder(
+            itemCount: dummylist.length,
             itemBuilder: (context, index) {
-              return ItemWidget();
-            }, 
-            ),
+              return ItemWidget(
+                item: dummylist[index],
+              );
+            },
+          ),
+        ),
         drawer: MyDrawer(),
       ),
     );

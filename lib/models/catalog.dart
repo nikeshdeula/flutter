@@ -1,17 +1,15 @@
 class CatalogModel {
-  static final products = [
-  Item(
-      id: 1,
-      name: "iphone 12 pro",
-      desc: "It's an apple",
-      price: 900,
-      color: "#33505a",
-      image:
-          "https://vader-prod.s3.amazonaws.com/1647011748-iphone-13-pro-family-hero.png")
-];
-
+  static final items = [
+    Item(
+        id: 1,
+        name: "iphone 12 pro",
+        desc: "It's an apple",
+        price: 900,
+        color: "#33505a",
+        image:
+            "https://vader-prod.s3.amazonaws.com/1647011748-iphone-13-pro-family-hero.png")
+  ];
 }
-
 
 class Item {
   final int id;
@@ -21,7 +19,13 @@ class Item {
   final String color;
   final String image;
 
-  Item({required this.id, required this.name, required this.desc, required this.price, required this.color, required this.image});
+  Item(
+      {required this.id,
+      required this.name,
+      required this.desc,
+      required this.price,
+      required this.color,
+      required this.image});
 }
 
 
