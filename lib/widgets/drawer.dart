@@ -35,7 +35,7 @@ class MyDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                CupertinoIcons.search,
+                CupertinoIcons.book,
                 color: Colors.black,
               ),
               title: Text(

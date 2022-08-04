@@ -1,7 +1,6 @@
 import 'package:app_1/models/catalog.dart';
 import 'package:app_1/widgets/drawer.dart';
 import 'package:flutter/material.dart';
-
 import '../widgets/item_Widget.dart';
 
 class HomePage extends StatelessWidget {
